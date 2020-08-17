@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- строка url_for('static', filename='css/main.css') модуль из фласка, который задает путь -->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css', v=1)}}">
+	{% block head %}{% endblock %}
+	<!-- <title>Document</title> -->
+</head>
+<body>
+	{% block body %}{% endblock %}
+</body>
+</html>
